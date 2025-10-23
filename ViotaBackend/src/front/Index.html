@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO básico -->
+    <title>Viota turismo Negocios</title>
+    <meta name="description" content="list of bussnies of our page ">
+    <meta name="keywords" content="palabras clave, separadas, por comas">
+    <meta name="author" content="sobreviviendo al aburrimiento">
+</head>
+
+
+<body>
+<select id="httpRequestType" class="httpRequestType" onchange=checkTypeOfRequest()>
+    <option value="" disabled selected>Selecciona una opción</option>
+    <option value="FindAll">FindAll</option>
+    <option value="Save">Save/edit (with body)</option>
+    <option value="delete">delete/</option>
+    <option value="findBusinessById">findBusinessById/</option>
+    <option value="findBusinessByname">findBusinessByname/</option>
+</select>
+
+<input id="PathVariable" type="text" placeholder="PathVariable...">
+
+<textarea id="body" rows="8" cols="50" placeholder="Body..."></textarea>
+
+<button id="button" onclick=mainFunction()>SEND HTTP REQUEST</button>
+</body>
+</html>
